@@ -1,0 +1,15 @@
+# buildspec.yml
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.11  # или 3.9, если ты не уверен
+  build:
+    commands:
+      - echo "No build step. Preparing for deployment"
+
+artifacts:
+  files:
+    - '**/*'
+  discard-paths: no
